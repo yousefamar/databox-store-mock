@@ -4,7 +4,7 @@
 	"name": "databox-store-mock",
 	"version": "0.1.0",
 
-	"description": "A debug Databox store that simply forwards any requests to a specified driver",
+	"description": "A fake data store container to test authentication with",
 	"author": "Yousef Amar <yousef@amar.io> (http://yousefamar.com/)",
 	"license": "MIT",
 

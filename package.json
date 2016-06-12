@@ -1,7 +1,7 @@
 {
   "name": "databox-store-mock",
   "version": "0.1.0",
-  "description": "A debug Databox store that simply forwards any requests to a specified driver",
+  "description": "A fake data store container to test authentication with",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "lsc main.ls",
