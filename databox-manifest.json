@@ -1,0 +1,32 @@
+{
+	"manifest-version": 1,
+
+	"name": "databox-store-mock",
+	"version": "0.1.0",
+
+	"description": "A fake data store container to test authentication with",
+	"author": "Yousef Amar <yousef@amar.io> (http://yousefamar.com/)",
+	"license": "MIT",
+
+	"tags": [
+		"store",
+		"mock",
+		"native",
+		"debug",
+		"test"
+	],
+
+	"homepage": "https://github.com/me-box/databox-store-mock",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/me-box/databox-store-mock.git"
+	},
+
+	"network-permissions": [
+	],
+	"hardware-permissions": [
+	],
+
+	"resource-requirements": {
+	}
+}
