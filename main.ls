@@ -88,4 +88,12 @@ app = express!
       |> JSON.stringify
       |> res.send
 
+  ..post '/write' (req, res) !->
+    unless req.body.data?
+      res.status 400 .send 'Missing data'
+      return
+
+    console.log 'Data written:' req.body.data
+    res.send req.body.data
+
   ..listen PORT

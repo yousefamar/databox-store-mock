@@ -1,6 +1,6 @@
 # Databox Store Mock
 
-A fake data store container to test authentication with. This code is not meant to be run on its own except for debug purposes. The live version is automatically pulled from https://amar.io:5000 as "databox-store-mock" and launched by [container manager](https://github.com/me-box/databox-container-manager.git) test scripts.
+A fake data store container to test authentication with. This code is not meant to be run on its own except for debug purposes. The live version is automatically pulled from https://amar.io:5000 as "databox-store-mock" and launched by [container manager](https://github.com/me-box/databox-container-manager) test scripts.
 
 For debug purposes:
 
@@ -86,9 +86,43 @@ An arbiter-minted macaroon with the [standard caveats](https://github.com/me-box
 
 ###### Success
 
-JSON data structured as specified above ([example](http://faker.hook.io?property=helpers.createCard)).
+  - JSON data structured as specified above ([example](http://faker.hook.io?property=helpers.createCard))
 
 ###### Error
 
+  - 400: Missing macaroon
+  - 403: Invalid macaroon
+
+### /write
+
+#### Description
+
+Method: POST
+
+Writes posted data into a black hole.
+
+##### Body Parameters
+
+###### macaroon
+
+Type: string
+
+An arbiter-minted macaroon with the [standard caveats](https://github.com/me-box/databox-arbiter#macaroons).
+
+###### data
+
+Type: string
+
+The fake data to be written to the store.
+
+##### Response
+
+###### Success
+
+  - The written data echoed back
+
+###### Error
+
+  - 400: Missing data
   - 400: Missing macaroon
   - 403: Invalid macaroon
