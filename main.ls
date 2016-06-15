@@ -67,7 +67,7 @@ app = express!
           |> (.trim!)
           # TODO: Catch potential JSON.parse exception
           |> JSON.parse
-          |> path-to-regex
+          |> path-to-regexp
           |> (.test path)
 
     (req, res, next) !->
