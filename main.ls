@@ -93,7 +93,8 @@ app = express!
       res.status 400 .send 'Missing data'
       return
 
-    console.log 'Data written:' req.body.data
-    res.send req.body.data
+    console.log 'Data written by' req.headers.host
+    #console.log 'Data written:' req.body.data
+    res.send ''
 
   ..listen PORT
